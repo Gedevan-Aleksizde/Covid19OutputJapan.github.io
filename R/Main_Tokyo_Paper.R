@@ -37,7 +37,7 @@ wl <- c(1, 2)  # Results as of these weeks ago
 # The first week start on January 20 (Mon), 2020
 
 ## covid = importdata([home '\Data\Covid_weekly_prefecture.csv']);  % Import weekly Covid data by prefecture
-covid <- read_csv("Covid19_Output/Data/Covid_weekly_prefecture.csv")
+covid <- read_csv("archives/20210120/Data/Covid_weekly_prefecture.csv")
 Data <- subset(covid, prefecture == pref)
 # Columns: 1 = date, 2 = new positive, 3 = death, 4 = mobility, 5 = GDP, 6 = population
 date <- Data$date + 21916
@@ -722,6 +722,4 @@ for(y in 1:length(altV)){
 }
 par(mfrow = c(1, 1), new = F)
 
-
-
-
+## base R では一括保存は不可能なので都度保存

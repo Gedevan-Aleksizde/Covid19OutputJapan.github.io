@@ -34,7 +34,7 @@ wl <- 1:2  # Results as of these weeks ago
 # The first week start on January 20 (Mon), 2020
 #covid = importdata([home 'Data/Covid_weekly2.csv']);  % Import weekly Covid data
 
-covid <- read_csv("Covid19_Output/Data/Covid_weekly2.csv")  # Import weekly covid data
+covid <- read_csv("archives/20210120//Data/Covid_weekly2.csv")  # Import weekly covid data
 
 N <- covid$positive
 dD <- covid$death
@@ -913,4 +913,4 @@ if (!iDrawUB) {
 }
 if(figure_save) saveas("BaselineTradeoffUBp.png", savedir, dev.args = dev.args)
 
-## 一括 save は不可能.
+## base R では一括保存は不可能なので都度保存
