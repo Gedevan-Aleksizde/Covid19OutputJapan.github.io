@@ -8,7 +8,7 @@ source("R/Covid_projection_control.R")
 
 figure_save <- T
 dev.args <- list()
-fontfamily <- "Noto Sans CJK JP"
+fontfamily <- ""
 savedir <- "R/img/Tokyo"
 xlim_tradeoff <- c(3, 4)
 

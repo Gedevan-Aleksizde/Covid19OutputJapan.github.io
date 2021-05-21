@@ -8,7 +8,7 @@ source("R/Covid_projection_control.R")
 
 figure_save <- T
 dev.args <- list()
-fontfamily <- "Noto Sans CJK JP"
+fontfamily <- ""
 savedir <- "R/img/Japan"
 xlim_tradeoff <- c(1.5, 3)
 iDrawUB <- T  # F = create quasi-UB without simulations, T = create UB with simulations
